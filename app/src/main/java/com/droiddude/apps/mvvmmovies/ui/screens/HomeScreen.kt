@@ -39,7 +39,7 @@ import com.droiddude.apps.mvvmmovies.utils.Screen
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen(navController : NavController) {
+fun HomeScreen(navController : NavHostController) {
     val movieListViewModel = hiltViewModel<MovieListViewModel>()
     val movieListState = movieListViewModel.movieListState.collectAsState().value
     val bottomNavController = rememberNavController()
@@ -64,7 +64,8 @@ fun HomeScreen(navController : NavController) {
         bottomBar = {
             BottomNavigationBar(
                 bottomNavController = bottomNavController,
-                onEvent = movieListViewModel::onEvent)
+                onEvent = movieListViewModel::onEvent
+            )
         }
     ) {
         Box(
@@ -77,10 +78,18 @@ fun HomeScreen(navController : NavController) {
                 startDestination = Screen.PopularMovies.route
             ) {
                 composable(Screen.PopularMovies.route) {
-
+                    PopularMoviesScreen(
+                        movieListState = movieListState,
+                        navController = navController,
+                        onEvent = movieListViewModel::onEvent
+                    )
                 }
                 composable(Screen.UpcomingMovies.route) {
-
+                    UpcomingMoviesScreen(
+                        movieListState = movieListState,
+                        navController = navController,
+                        onEvent = movieListViewModel::onEvent
+                    )
                 }
             }
         }
