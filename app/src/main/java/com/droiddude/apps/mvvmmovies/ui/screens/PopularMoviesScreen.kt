@@ -13,8 +13,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.droiddude.apps.mvvmmovies.presentation.MovieListState
-import com.droiddude.apps.mvvmmovies.presentation.MovieListUiEvent
+import com.droiddude.apps.mvvmmovies.presentation.movielist.MovieListState
+import com.droiddude.apps.mvvmmovies.presentation.movielist.MovieListUiEvent
 import com.droiddude.apps.mvvmmovies.ui.components.MovieItem
 import com.droiddude.apps.mvvmmovies.utils.Category
 

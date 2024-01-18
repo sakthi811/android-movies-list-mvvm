@@ -20,7 +20,6 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
@@ -28,13 +27,12 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.droiddude.apps.mvvmmovies.presentation.MovieListUiEvent
-import com.droiddude.apps.mvvmmovies.presentation.MovieListViewModel
+import com.droiddude.apps.mvvmmovies.presentation.movielist.MovieListUiEvent
+import com.droiddude.apps.mvvmmovies.presentation.movielist.MovieListViewModel
 import com.droiddude.apps.mvvmmovies.utils.Screen
 
 @OptIn(ExperimentalMaterial3Api::class)

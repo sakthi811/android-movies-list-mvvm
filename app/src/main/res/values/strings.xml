@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MVVM Movies App</string>
+    <string name="language">"Language : "</string>
+    <string name="overview">Overview</string>
+    <string name="release_date">"Release Date : "</string>
+    <string name="votes">"Votes"</string>
 </resources>

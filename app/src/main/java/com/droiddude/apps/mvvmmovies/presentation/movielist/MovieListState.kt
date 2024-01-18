@@ -1,4 +1,4 @@
-package com.droiddude.apps.mvvmmovies.presentation
+package com.droiddude.apps.mvvmmovies.presentation.movielist
 
 import com.droiddude.apps.mvvmmovies.domain.model.Movie
 

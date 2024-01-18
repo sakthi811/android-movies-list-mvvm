@@ -1,4 +1,4 @@
-package com.droiddude.apps.mvvmmovies.presentation
+package com.droiddude.apps.mvvmmovies.presentation.movielist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
